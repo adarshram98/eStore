@@ -19,7 +19,61 @@ function Home() {
            >
                
            </Product>
+           <Product
+           id="2312321"
+           title="shoe"
+           price={999}
+           rating={4}
+           image="https://images.unsplash.com/photo-1556774687-0e2fdd0116c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+           >
+               
+           </Product>
+           
            </div>
+           <div className="home__row">
+           <Product
+           id="2312321"
+           title="shoe"
+           price={999}
+           rating={4}
+           image="https://images.unsplash.com/photo-1556774687-0e2fdd0116c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+           >
+               
+           </Product>
+           <Product
+           id="2312321"
+           title="shoe"
+           price={999}
+           rating={4}
+           image="https://images.unsplash.com/photo-1556774687-0e2fdd0116c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+           >
+               
+           </Product>
+           <Product
+           id="2312321"
+           title="shoe"
+           price={999}
+           rating={4}
+           image="https://images.unsplash.com/photo-1556774687-0e2fdd0116c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+           >
+               
+           </Product>
+           
+           </div>
+           <div className="home__row">
+           <Product
+           id="2312321"
+           title="shoe"
+           price={999}
+           rating={4}
+           image="https://images.unsplash.com/photo-1556774687-0e2fdd0116c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"
+           >
+               
+           </Product>
+           
+           
+           </div>
+
            
         </div>
     )
