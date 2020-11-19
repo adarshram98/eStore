@@ -1,13 +1,13 @@
 import "./App.css";
 import Navbar from "./Navbar";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Home from "./Home";
 function App() {
   return (
     <Router>
       <div className="app">
         <Switch>
           <Route path="/login">
-            <Navbar></Navbar>
             <h2>Login ROute</h2>
           </Route>
           <Route path="/checkout">
@@ -16,7 +16,7 @@ function App() {
           </Route>
           <Route path="/">
             <Navbar></Navbar>
-            <h2>Home Page</h2>
+            <Home></Home>
             
           </Route>
         </Switch>
