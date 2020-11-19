@@ -17,6 +17,7 @@ function App() {
           <Route path="/">
             <Navbar></Navbar>
             <h2>Home Page</h2>
+            
           </Route>
         </Switch>
       </div>
