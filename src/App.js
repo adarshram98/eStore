@@ -3,13 +3,14 @@ import Navbar from "./Navbar";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./Home";
 import Checkout from "./Checkout";
+import Login from "./Login";
 function App() {
   return (
     <Router>
       <div className="app">
         <Switch>
           <Route path="/login">
-            <h2>Login ROute</h2>
+            <Login></Login>
           </Route>
           <Route path="/checkout">
             <Navbar></Navbar>

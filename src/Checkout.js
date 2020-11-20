@@ -1,14 +1,15 @@
 import React from 'react'
 import CheckoutProduct from './CheckoutProduct'
 import { useStateValue } from './StateProvider'
-import NavBar from './Navbar.js'
+import './Checkout.css'
+import Subtotal from './Subtotal'
 
 function Checkout() {
     const [{basket},dispatch] = useStateValue()
     return (
         <div className="checkout">
-            
-                {basket?.length ===0 ?(
+            <div className="checkout__left">
+            {basket?.length ===0 ?(
                     <h2>
                         No Products In your basket
                     </h2>
@@ -31,6 +32,14 @@ function Checkout() {
                     </div>
                 )}
             
+            </div>
+            {basket?.length>=0 &&(
+                <div className="checkout__right">
+                    <Subtotal></Subtotal>
+                </div>
+            )}
+            
+
         </div>
     )
 }

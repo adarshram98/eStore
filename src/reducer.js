@@ -9,6 +9,9 @@ export const initialState={
     user:null,
 }
 
+export const getSubtotal=(basket) =>
+basket?.reduce((amount,item)=>item.price +amount,0)
+
 function reducer(state,action){
     console.log(action)
     switch(action.type){
