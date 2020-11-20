@@ -15,23 +15,27 @@ basket?.reduce((amount,item)=>item.price +amount,0)
 function reducer(state,action){
     console.log(action)
     switch(action.type){
+        case 'SET_USER':
+        return {
+            ...state,user:action.user
+        }
         case 'ADD_TO_BASKET':
             // logic to add to basket
             return {...state,
                 basket:[...state.basket,action.item]}
-            break;
+            
         case 'REMOVE_FROM_BASKET':
         //clone the basket
         let newBasket = [...state.basket]
         //find the index
-        const index = state.basket.findIndex((item)=> item.id == action.id )
+        const index = state.basket.findIndex((item)=> item.id === action.id )
         if(index>=0)
         {
             //remove the item at the index
             newBasket?.splice(index,1)
         }
                 return {...state,basket:newBasket};
-            break;
+           
         
             default:
                 return state;

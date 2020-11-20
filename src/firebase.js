@@ -10,4 +10,7 @@ var firebaseConfig = {
   };
   // Initialize Firebase
   const fire =firebase.initializeApp(firebaseConfig);
-  export default fire;
+
+  const auth = firebase.auth();
+
+  export {auth};
